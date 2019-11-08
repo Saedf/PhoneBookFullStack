@@ -18,7 +18,7 @@ namespace PhoneBookFullStack.Infrastructures.DataAcess.Common
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Person> People { get; set; }
         public DbSet<PersonTag> PersonTags { get; set; }
-        public PhoneBookContext(DbContextOptions<PhoneBookContext> options) :base(option)
+        public PhoneBookContext(DbContextOptions<PhoneBookContext> options) :base(options)
         {
 
         }

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneBookFullStack.Domain.Contract\PhoneBookFullStack.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\PhoneBookFullStack.Domain.Core\PhoneBookFullStack.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>

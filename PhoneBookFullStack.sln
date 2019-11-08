@@ -3,7 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookFullStack", "PhoneBookFullStack\PhoneBookFullStack.csproj", "{B6003023-6D77-4C9A-8F87-7350BF2AED88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookFullStack.MVC", "PhoneBookFullStack\PhoneBookFullStack.MVC.csproj", "{B6003023-6D77-4C9A-8F87-7350BF2AED88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.EndPoints", "04.EndPoints", "{6C6E2095-F90F-4070-954A-AF306C19B701}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Domain", "01.Domain", "{C2F4679D-E6B9-4601-98B6-8ED52BC2E653}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookFullStack.Domain.Core", "PhoneBookFullStack.Domain.Core\PhoneBookFullStack.Domain.Core.csproj", "{65632286-AE67-4FCA-8F67-B4D7AB28DA8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookFullStack.Domain.Contracts", "PhoneBookFullStack.Domain.Contract\PhoneBookFullStack.Domain.Contracts.csproj", "{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Services", "02.Services", "{0BCA56FC-FEB4-427F-857C-69773A6E0159}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookFullStack.Services.ApplicationServices", "PhoneBookFullStack.Services.ApplicationServices\PhoneBookFullStack.Services.ApplicationServices.csproj", "{94141550-23FA-447B-9CFF-BD24EDFC3419}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Infrastructures", "03.Infrastructures", "{72B9D0D5-2A89-452C-9B46-2A48FCCB5A6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookFullStack.Infrastructures.DataAcess", "PhoneBookFullStack.Infrastructures.DataAcess\PhoneBookFullStack.Infrastructures.DataAcess.csproj", "{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +31,32 @@ Global
 		{B6003023-6D77-4C9A-8F87-7350BF2AED88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6003023-6D77-4C9A-8F87-7350BF2AED88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6003023-6D77-4C9A-8F87-7350BF2AED88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65632286-AE67-4FCA-8F67-B4D7AB28DA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65632286-AE67-4FCA-8F67-B4D7AB28DA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65632286-AE67-4FCA-8F67-B4D7AB28DA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65632286-AE67-4FCA-8F67-B4D7AB28DA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94141550-23FA-447B-9CFF-BD24EDFC3419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94141550-23FA-447B-9CFF-BD24EDFC3419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94141550-23FA-447B-9CFF-BD24EDFC3419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94141550-23FA-447B-9CFF-BD24EDFC3419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6003023-6D77-4C9A-8F87-7350BF2AED88} = {6C6E2095-F90F-4070-954A-AF306C19B701}
+		{65632286-AE67-4FCA-8F67-B4D7AB28DA8B} = {C2F4679D-E6B9-4601-98B6-8ED52BC2E653}
+		{FCACC0FE-2643-4F5B-B333-B8CE16D1E4F6} = {C2F4679D-E6B9-4601-98B6-8ED52BC2E653}
+		{94141550-23FA-447B-9CFF-BD24EDFC3419} = {0BCA56FC-FEB4-427F-857C-69773A6E0159}
+		{FCC69B4D-BE93-407A-8E66-1B0FBD9E2C48} = {72B9D0D5-2A89-452C-9B46-2A48FCCB5A6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D13B3EF-1BDB-4359-9709-5F23AF0DED32}
